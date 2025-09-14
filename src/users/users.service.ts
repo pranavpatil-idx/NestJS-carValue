@@ -31,12 +31,14 @@ export class UsersService {
     }
 
     async remove(id: number) {
-        // return this.repo.delete(id);
         const user = await this.repo.findOneBy({ id });
         if (!user) {
             throw new Error('User not found');
         }   
-        return this.repo.remove(user);
+        const userId = user.id;
+        await this.repo.remove(user);
+        console.log('Removed user with id', userId);
+        return;
     }
 
 }
