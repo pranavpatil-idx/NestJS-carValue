@@ -5,7 +5,7 @@
 # GET http://localhost:3000/auth?email=abc@gmail.com
 
 // get user by id
-# GET http://localhost:3000/auth/6
+GET http://localhost:3000/auth/6
 
 // create a new user
 # POST http://localhost:3000/auth/signup
