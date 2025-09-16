@@ -20,16 +20,16 @@
 # }
 
 // signin user 
-POST http://localhost:3000/auth/signin
-Content-Type: application/json
+# POST http://localhost:3000/auth/signin
+# Content-Type: application/json
 
-{
-    "email": "test@gmail.com",
-    "password": "12345"
-}
+# {
+#     "email": "test@gmail.com",
+#     "password": "12345"
+# }
 
 // signout user
-POST http://localhost:3000/auth/signout
+# POST http://localhost:3000/auth/signout
 
 // delete user by id
 # DELETE http://localhost:3000/auth/8
