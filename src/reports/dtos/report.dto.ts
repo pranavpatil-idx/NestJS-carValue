@@ -1,5 +1,4 @@
 import { Expose, Transform } from "class-transformer";
-import { User } from "../../users/user.entity";
 
 export class ReportDto {
     @Expose()
@@ -19,6 +18,8 @@ export class ReportDto {
     @Transform( ({obj}) => Math.round(obj.mileage) )
     @Expose()
     mileage : number;
+    @Expose()
+    approved : boolean;
 
     @Transform( ({obj}) => obj.user.id)
     @Expose()
